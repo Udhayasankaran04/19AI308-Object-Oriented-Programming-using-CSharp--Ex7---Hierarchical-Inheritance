@@ -7,6 +7,7 @@ Aim is to create a Scooter and Car vehicle where the Tyre is being inherited fro
 
 
 # PROGRAM:
+```
 using System;
 
 public class Vechicle
@@ -50,6 +51,7 @@ class Program
         car.display();
     }
 }
+```
 # OUTPUT:
 ![alt text](image-1.png)
 
