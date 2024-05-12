@@ -1,34 +1,43 @@
-using System;
-namespace Basic_Example
+﻿using System;
+
+public class Vechicle
 {
-    class Program
+    public void tyre()
     {
-        static void Main(string[] args)
-        {
-  
-        }
+        Console.WriteLine("It is a tubeless tyre");
     }
-    //Creating Base Class
-    class Tyre
+}
+
+class Scooter : Vechicle
+{
+    public  void display() 
     {
-        protected void TyreType()
-        {
-  
-        }
+        base.tyre();
+        Console.WriteLine("It is a scooter class");
     }
-    //Creating Child Class
-    class Scooter : Tyre
+}
+
+class Car : Vechicle
+{
+    public  void display() 
     {
-        public void ScooterType()
-        {
-          
+        base.tyre();
+        Console.WriteLine("It is a car class");
     }
-    //Creating Child Class
-    class Car : Tyre
+}
+
+class Program
+{
+    static void Main()
     {
-        public void CarType()
-        {
-            
-        }
+        Scooter scooter = new Scooter();
+        Car car = new Car();
+        
+        
+        Console.WriteLine("Scooter started:");
+        scooter.display();
+        
+        Console.WriteLine("\nCar started:");
+        car.display();
     }
 }
